@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none; /*убрать подчеркивание ссылок*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%; 
+    background-color: aqua;
+    display: flex;
+}
+
+.container {
+    margin-left: 10%;
+    width: 90%;
+    display: flex;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-top: 25px;
+    
+}
+
+nav {
+    margin-left: 20%;
+    margin-top: 90px;
+}
+
+nav li{
+    display: inline-block; /*один из способов разместить элементы в строку*/
+    margin-right: 10px;
+}
+
+li a{
+    font-size: 30px;
+}
+
+nav a:hover {
+    background-color: brown;
+    color: aliceblue;
+    /* margin-right: 10px; */
+}

@@ -1,48 +1,192 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none; /*убрать подчеркивание ссылок*/
+    box-sizing: border-box; /* Добавлено для более удобного управления размерами элементов */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    width: 100%; 
-    background-color: aqua;
-    display: flex;
+a {
+    text-decoration: none; /* Убрать подчеркивание ссылок */
+    
+    color: black; /* Добавлен цвет текста по умолчанию */
 }
 
-.container {
-    margin-left: 10%;
-    width: 90%;
+header {
+    width: 100%;
+    background-color: #ffffff;
     display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0; /* Фиксированное положение шапки */
+    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+    border-bottom: 1px solid #bbcee7;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выровнять элементы по вертикали */
+    padding: 10px 0; /* Добавлен отступ сверху и снизу */
 }
 
 #logo {
-    width: 150px;
+    width: 70px;
     height: auto;
-    margin-top: 25px;
+    margin-top: 5px;
+    border-radius:10px; /* Добавлен скругленный угол */
+    margin-right: 10px;
+}
+
+.logo-bstu-it{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+}
+
+#logo-bstu {
+    width: auto;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.kafedra-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.kafedra-it:hover {
+    p{
+        color: #7ACEEF;
+    }
     
 }
 
 nav {
-    margin-left: 20%;
-    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav li{
-    display: inline-block; /*один из способов разместить элементы в строку*/
-    margin-right: 10px;
+nav ul {
+    list-style: none; /* Убрать маркеры списка */
+    display: flex; /* Разместить элементы в строку */
 }
 
-li a{
-    font-size: 30px;
+nav li a {
+    font-size: 22px; /* Уменьшено значение шрифта для лучшей адаптивности */
+    margin-left: 20px; /* Отступ между пунктами меню */
+    color: #122d52; /* Цвет текста ссылок */
+    border-bottom: 1px solid #bbcee7;
 }
 
-nav a:hover {
-    background-color: brown;
-    color: aliceblue;
-    /* margin-right: 10px; */
+
+nav a:hover{
+    color: #7ACEEF;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    font-size: 16px;
+}
+
+main  li {
+    margin-bottom: 10px;
+    margin-right: 10%;
+}
+
+main .td-left p {
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+
+main .td-left p {
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+main .container {
+    margin-top: 130px;
+    width: 90%;
+    max-width: 1200px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center; /* Выровнять элементы по вертикали */
+}
+
+
+
+.photo-teacher {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+main td {
+    vertical-align: top;
+}
+
+.td-center {
+    text-align: center;
+}
+
+td ul {
+    padding-left: 15px;
+}
+
+figcaption a {
+    img {
+        height: auto;
+        width: 50px;
+        
+    }
+}
+
+
+
+.info-it {
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+footer {
+    position:static;
+    bottom: 0; /* Прикрепляем футер к нижней части wrapper */
+    width: 100%;
+    margin-top: 10px;
+    background-color: #122D52;
+    justify-content: center;
+    display: flex;
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выровнять элементы по вертикали */
+    padding: 10px 0; /* Добавлен отступ сверху и снизу */
+}
+
+footer li {
+    list-style: none; /* Убрать маркеры списка */
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
 }

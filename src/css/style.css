@@ -1,14 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Добавлено для более удобного управления размерами элементов */
+    box-sizing: border-box;
+    /* Добавлено для более удобного управления размерами элементов */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    text-decoration: none; /* Убрать подчеркивание ссылок */
-    
-    color: black; /* Добавлен цвет текста по умолчанию */
+    text-decoration: none;
+    /* Убрать подчеркивание ссылок */
+
+    color: black;
+    /* Добавлен цвет текста по умолчанию */
 }
 
 header {
@@ -17,8 +20,10 @@ header {
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 0; /* Фиксированное положение шапки */
-    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+    top: 0;
+    /* Фиксированное положение шапки */
+    z-index: 1000;
+    /* Чтобы шапка была поверх других элементов */
     border-bottom: 1px solid #bbcee7;
 }
 
@@ -27,19 +32,22 @@ header .container {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Выровнять элементы по вертикали */
-    padding: 10px 0; /* Добавлен отступ сверху и снизу */
+    align-items: center;
+    /* Выровнять элементы по вертикали */
+    padding: 10px 0;
+    /* Добавлен отступ сверху и снизу */
 }
 
 #logo {
     width: 70px;
     height: auto;
     margin-top: 5px;
-    border-radius:10px; /* Добавлен скругленный угол */
+    border-radius: 10px;
+    /* Добавлен скругленный угол */
     margin-right: 10px;
 }
 
-.logo-bstu-it{
+.logo-bstu-it {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,15 +72,15 @@ header .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
+
+
 }
 
 .kafedra-it:hover {
-    p{
+    p {
         color: #7ACEEF;
     }
-    
+
 }
 
 nav {
@@ -82,21 +90,27 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Убрать маркеры списка */
-    display: flex; /* Разместить элементы в строку */
+    list-style: none;
+    /* Убрать маркеры списка */
+    display: flex;
+    /* Разместить элементы в строку */
 }
 
 nav li a {
-    font-size: 22px; /* Уменьшено значение шрифта для лучшей адаптивности */
-    margin-left: 20px; /* Отступ между пунктами меню */
-    color: #122d52; /* Цвет текста ссылок */
+    font-size: 22px;
+    /* Уменьшено значение шрифта для лучшей адаптивности */
+    margin-left: 20px;
+    /* Отступ между пунктами меню */
+    color: #122d52;
+    /* Цвет текста ссылок */
     border-bottom: 1px solid #bbcee7;
 }
 
 
-nav a:hover{
+nav a:hover {
     color: #7ACEEF;
 }
+
 
 main {
     display: flex;
@@ -106,7 +120,7 @@ main {
     font-size: 16px;
 }
 
-main  li {
+main li {
     margin-bottom: 10px;
     margin-right: 10%;
 }
@@ -117,8 +131,10 @@ main .td-left p {
 }
 
 main .td-left p {
-    text-indent: 1.5em; /* Отступ первой строки */
-    text-align: justify; /* Выравнивание по ширине */
+    text-indent: 1.5em;
+    /* Отступ первой строки */
+    text-align: justify;
+    /* Выравнивание по ширине */
 }
 
 main .container {
@@ -127,15 +143,26 @@ main .container {
     max-width: 1200px;
     /* display: flex; */
     /* justify-content: space-between; */
-    align-items: center; /* Выровнять элементы по вертикали */
+    align-items: center;
+    /* Выровнять элементы по вертикали */
 }
 
 
+table {
+    border-left: 0;
+
+}
+
+.plan img {
+    display: block; /* Чтобы изображения занимали всю ширину контейнера */
+    margin: 0 auto;
+}
 
 .photo-teacher {
     width: 300px;
     height: auto;
     border-radius: 20px;
+
 }
 
 main td {
@@ -150,24 +177,93 @@ td ul {
     padding-left: 15px;
 }
 
+
+
+.table-teacher {
+    width: 100%;
+}
+
+.td-teacher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 figcaption a {
     img {
         height: auto;
         width: 50px;
-        
+
     }
 }
 
+.p-spisok {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
 
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
 .info-it {
-    text-indent: 1.5em; /* Отступ первой строки */
-    text-align: justify; /* Выравнивание по ширине */
+    text-indent: 1.5em;
+    /* Отступ первой строки */
+    text-align: justify;
+    /* Выравнивание по ширине */
+}
+
+/* Стили для контейнера входа */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5em;
+    padding: 2rem;
+    background-color: #fff;
+    border: 2px solid #122d52;
+    border-radius: 8px;
+    margin-bottom: 22em;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.login-form input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #122d52;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7ACEEF;
 }
 
 footer {
-    position:static;
-    bottom: 0; /* Прикрепляем футер к нижней части wrapper */
+    position: static;
+    bottom: 0;
+    /* Прикрепляем футер к нижней части wrapper */
     width: 100%;
     margin-top: 10px;
     background-color: #122D52;
@@ -180,12 +276,15 @@ footer .container {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Выровнять элементы по вертикали */
-    padding: 10px 0; /* Добавлен отступ сверху и снизу */
+    align-items: center;
+    /* Выровнять элементы по вертикали */
+    padding: 10px 0;
+    /* Добавлен отступ сверху и снизу */
 }
 
 footer li {
-    list-style: none; /* Убрать маркеры списка */
+    list-style: none;
+    /* Убрать маркеры списка */
     color: white;
     font-size: 12px;
     margin-top: 10px;

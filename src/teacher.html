@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <title>Кафедра информационных технологий</title>
 </head>
 
@@ -32,16 +32,19 @@
     <main>
         <div class="container">
             <h1>Преподаватели <em style="color: red;">(будет из бд подгружать!!!)</em></h1>
-            <table class="table-teacher">
-                <tr class="block-teacher">
-                    <td class="td-teacher"><img src="img/weretennikov.jpg" alt="" class="photo-teacher"></td>
-                    <td class="info-teacher">
+            <div class="teachers-list">
+                <!-- Блок преподавателя 1 -->
+                <div class="teacher-block">
+                    <div class="teacher-photo">
+                        <img src="img/weretennikov.jpg" alt="Веретенников Олег Владимирович" class="photo-teacher">
+                    </div>
+                    <div class="teacher-info">
                         <h2 class="name-teacher">Веретенников Олег Владимирович</h2>
-                        <p class="about-teacher">Программист, старший преподаватель</p><br>
-                        <p class="about-teacher"></p>Окончил БГТУ им. В.Г. Шухова в 2008 г.</p>
+                        <p class="about-teacher">Программист, старший преподаватель</p>
+                        <p class="about-teacher">Окончил БГТУ им. В.Г. Шухова в 2008 г.</p>
                         <p class="about-teacher">Специальность: Информационные системы и технологии</p>
                         <p class="p-spisok">Преподаваемые дисциплины:</p>
-                        <ul>
+                        <ul class="li-lesson-teacher">
                             <li>Телекоммуникационные системы</li>
                             <li>Инструментальные средства информационных систем</li>
                             <li>Вычислительные системы, сети и телекоммуникации</li>
@@ -51,20 +54,21 @@
                             <li>Информатика</li>
                             <li>Информационные технологии</li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" height="30"></td>
-                </tr>
-                <tr class="block-teacher">
-                    <td class="td-teacher"><img src="img/zhdanova.jpg" alt="" class="photo-teacher"></td>
-                    <td class="info-teacher">
+                    </div>
+                </div>
+
+                <!-- Блок преподавателя 2 -->
+                <div class="teacher-block">
+                    <div class="teacher-photo">
+                        <img src="img/zhdanova.jpg" alt="Жданова Светлана Ивановна" class="photo-teacher">
+                    </div>
+                    <div class="teacher-info">
                         <h2 class="name-teacher">Жданова Светлана Ивановна</h2>
-                        <p class="about-teacher">Старший преподаватель</p><br>
-                        <p class="about-teacher"></p>Окончил БГТУ им. В.Г. Шухова в 2008 г.</p>
+                        <p class="about-teacher">Старший преподаватель</p>
+                        <p class="about-teacher">Окончила БГТУ им. В.Г. Шухова в 2008 г.</p>
                         <p class="about-teacher">Специальность: Информационные системы и технологии</p>
                         <p class="p-spisok">Преподаваемые дисциплины:</p>
-                        <ul>
+                        <ul class="li-lesson-teacher">
                             <li>Телекоммуникационные системы</li>
                             <li>Инструментальные средства информационных систем</li>
                             <li>Вычислительные системы, сети и телекоммуникации</li>
@@ -74,12 +78,10 @@
                             <li>Информатика</li>
                             <li>Информационные технологии</li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" height="30"></td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">

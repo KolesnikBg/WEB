@@ -76,11 +76,8 @@ header .container {
 
 }
 
-.kafedra-it:hover {
-    p {
+.kafedra-it p:hover {
         color: #7ACEEF;
-    }
-
 }
 
 nav {
@@ -154,7 +151,8 @@ table {
 }
 
 .plan img {
-    display: block; /* Чтобы изображения занимали всю ширину контейнера */
+    display: block;
+    /* Чтобы изображения занимали всю ширину контейнера */
     margin: 0 auto;
 }
 
@@ -162,7 +160,6 @@ table {
     width: 300px;
     height: auto;
     border-radius: 20px;
-
 }
 
 main td {
@@ -288,4 +285,94 @@ footer li {
     color: white;
     font-size: 12px;
     margin-top: 10px;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-item-left {
+    flex: 2;
+}
+
+.flex-item-right {
+    flex: 1;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+.teachers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.teacher-block {
+    display: flex;
+    align-items: flex-start;
+    /* Выравнивание по верхней части */
+    gap: 20px;
+}
+
+.teacher-photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.teacher-info {
+    flex: 1;
+    /* Занимает все доступное пространство */
+}
+
+.name-teacher {
+    margin-top: 0;
+}
+
+.about-teacher {
+    margin: 5px 0;
+}
+
+.li-lesson-teacher {
+    padding-left: 20px;
+}
+
+.table-lesson {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-lesson td {
+    padding: 12px 16px;
+}
+
+.table-lesson thead tr {
+    font-weight: bold;
+    border-top: 1px solid #e8e9eb;
+}
+
+.table-lesson tr {
+    border-bottom: 1px solid #e8e9eb;
+}
+
+.table-lesson tbody tr:hover {
+    background: #e8f6ff;
+}
+
+.table-lesson a {
+    color: #122d52;
+    /* Цвет текста ссылок */
+    border-bottom: 1px solid #bbcee7;
+}
+
+
+.table-lesson a:hover {
+color: #7ACEEF;
 }

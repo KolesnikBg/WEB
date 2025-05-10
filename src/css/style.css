@@ -476,7 +476,7 @@ figcaption {
     border-top: 8px solid #7ACEEF; /* Цвет анимированной части */
     border-radius: 50%;
     width: 200px;
-    height: 170px;
+    height: 200px;
     animation: spin 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
     margin-bottom: 20px;
 }
@@ -497,3 +497,27 @@ figcaption {
     display: none;
 }
 
+img {
+    transition: transform 0.5s ease; /* Плавная анимация */
+  }
+
+  .notification {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7ACEEF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.notification.show {
+    top: 20px;
+    opacity: 1;
+}
